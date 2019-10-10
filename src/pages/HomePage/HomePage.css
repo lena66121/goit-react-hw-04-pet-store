@@ -1,0 +1,12 @@
+.home {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__title {
+  color: #444444;
+  font-size: 35px;
+  font-weight: bold;
+}

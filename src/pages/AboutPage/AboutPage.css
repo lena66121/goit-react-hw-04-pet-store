@@ -1,0 +1,16 @@
+.about {
+  color: #444444;
+  font-size: 20px;
+  padding-left: 110px;
+  padding-top: 20px;
+}
+
+.about p {
+  width: 1000px;
+  margin-bottom: 10px;
+}
+
+.about__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
