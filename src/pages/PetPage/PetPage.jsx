@@ -10,9 +10,17 @@ class PetPage extends Component {
   };
 
   componentDidMount() {
-    const { match } = this.props;
-    this.setState({
-      pet: petsList.find(pet => pet.id === match.params.petId),
+    const { match, history } = this.props;
+    const ids = petsList.map(obj => obj.id);
+
+    if (ids.includes(match.params.petId)) {
+      return this.setState({
+        pet: petsList.find(pet => pet.id === match.params.petId),
+      });
+    }
+
+    return history.push({
+      pathname: '/pets',
     });
   }
 
